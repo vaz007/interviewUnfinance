@@ -2,9 +2,11 @@ import path from "path";
 import Contact from "../models/contacts";
 require("dotenv").config();
 
-const {
-  Worker,
-} = require("worker_threads");
+const { Worker } = require("worker_threads");
+
+// @desc: Upload CSV file
+// @route: POST /upload
+// @access: Public
 
 export const uploadCsv = async (req, res) => {
   try {

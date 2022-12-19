@@ -15,6 +15,7 @@ Following project contains Authentication and bulk upload of CSV using Node, Exp
 
 # Note
 1. I have pushed .env file as well so no need to worry about it just start the server. 
+2. I have attached a sample test.csv in the working DIR. Please make sure of the headers, as well as email and number needs to be unique and linkedIn URL needs to be a valid linkedin url.
 
 # Improvements
 

@@ -82,6 +82,7 @@ export const login = async (req, res) => {
 // @desc: Forgot Password
 // @route: POST /forgotPassword
 // @access: Public
+
 export const forgotPassword = async (req, res) => {
   try {
     const user = await User.findOne({ email: req.body.email });
@@ -154,6 +155,7 @@ export const resetPassword = async (req, res) => {
 // @desc: Update USER details
 // @route: Put /updateDetails
 // @access: Private
+
 export const updateUserDetails = async (req, res) => {
   try {
     const fieldsToUpdate = {
