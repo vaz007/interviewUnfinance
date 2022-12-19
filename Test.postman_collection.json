@@ -1,0 +1,714 @@
+{
+	"info": {
+		"_postman_id": "b9b49029-ef87-41bc-a935-66c8400e1eb1",
+		"name": "Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6122755"
+	},
+	"item": [
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"ankur\",\r\n    \"email\":\"ae@gmail.com\",\r\n    \"password\":\"Abc123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/register",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"register"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Successful Response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"ankur\",\r\n    \"email\":\"ae@gmail.com\",\r\n    \"password\":\"Abc123456\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/register",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"register"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzOWZlNTFkOWM4NTM5ODZkNDNlNmExMiIsImlhdCI6MTY3MTQyMzI2MSwiZXhwIjoxNjcxNDIzMzYxfQ.37do1GWorANQo47hfsvXyekk4sa248kOBPudaZBU_JU; Path=/; Expires=Sat, 03 Oct 2296 04:14:21 GMT; HttpOnly"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "239"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"ef-n6rjMk0JI01G6cveRExH9hfD8hs\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 19 Dec 2022 04:14:21 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"succesfully created user\",\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzOWZlNTFkOWM4NTM5ODZkNDNlNmExMiIsImlhdCI6MTY3MTQyMzI2MSwiZXhwIjoxNjcxNDIzMzYxfQ.37do1GWorANQo47hfsvXyekk4sa248kOBPudaZBU_JU\"\n}"
+						}
+					]
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"ae@gmail.com\",\r\n    \"password\":\"ABCDEFGH\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/login",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Successful Response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\":\"ad@gmail.com\",\r\n    \"password\":\"Abc123456\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzOWZlNTBmNTQyNTk4OGY0NWJmMzI1OSIsImlhdCI6MTY3MTQyMzk1NiwiZXhwIjoxNjcxNDI0MDU2fQ.x627krBynvOsvgnNnPT4m4UYap6cMQO_S0MOwdVT1Ws; Path=/; Expires=Sat, 03 Oct 2296 04:25:56 GMT; HttpOnly"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "202"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"ca-ehHFw2JmaKmSXU8Zl/mUYKBojag\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 19 Dec 2022 04:25:56 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzOWZlNTBmNTQyNTk4OGY0NWJmMzI1OSIsImlhdCI6MTY3MTQyMzk1NiwiZXhwIjoxNjcxNDI0MDU2fQ.x627krBynvOsvgnNnPT4m4UYap6cMQO_S0MOwdVT1Ws\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Reset Password",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"password\": \"ABCDEFGH\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/resetPassword/6de12819471be44fff9b1cf539179662002e29600720ce6de12082fe0f85b546",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"resetPassword",
+								"6de12819471be44fff9b1cf539179662002e29600720ce6de12082fe0f85b546"
+							]
+						},
+						"description": "Token should be generated from forgot password"
+					},
+					"response": [
+						{
+							"name": "Successful Response",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"password\": \"ABCDEFGH\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/resetPassword/6de12819471be44fff9b1cf539179662002e29600720ce6de12082fe0f85b546",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"resetPassword",
+										"6de12819471be44fff9b1cf539179662002e29600720ce6de12082fe0f85b546"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzOWZlNTBmNTQyNTk4OGY0NWJmMzI1OSIsImlhdCI6MTY3MTQyNTE5MCwiZXhwIjoxNjcxNDI1MjkwfQ.wRpTL7BQLWO35hyAtc76XkSMV1RBABVRO15IqeVKBNY; Path=/; Expires=Sat, 03 Oct 2296 04:46:30 GMT; HttpOnly"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "202"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"ca-4XHpBn+El6wyAQPnlN71zz+9Zn4\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 19 Dec 2022 04:46:30 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzOWZlNTBmNTQyNTk4OGY0NWJmMzI1OSIsImlhdCI6MTY3MTQyNTE5MCwiZXhwIjoxNjcxNDI1MjkwfQ.wRpTL7BQLWO35hyAtc76XkSMV1RBABVRO15IqeVKBNY\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Forgot Password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"ad@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/forgotPassword",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"forgotPassword"
+							]
+						},
+						"description": "Token generated will be used to reset password"
+					},
+					"response": [
+						{
+							"name": "Successful Response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\":\"ad@gmail.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/forgotPassword",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"forgotPassword"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "349"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"15d-lcoCwPrNiekkxrU0OCg2P8FaeZc\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 19 Dec 2022 04:42:12 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"data\": {\n        \"resetToken\": \"1f8b3927229072f7ed6cb892cc42e6b0d5f76b3f\",\n        \"user\": {\n            \"_id\": \"639fe50f5425988f45bf3259\",\n            \"name\": \"ankur\",\n            \"email\": \"ad@gmail.com\",\n            \"createdAt\": \"2022-12-19T04:14:07.352Z\",\n            \"__v\": 0,\n            \"resetPassowrdToken\": \"6de12819471be44fff9b1cf539179662002e29600720ce6de12082fe0f85b546\",\n            \"resetPasswordExpire\": \"2022-12-19T04:52:12.518Z\"\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Details",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzOWZlNTBmNTQyNTk4OGY0NWJmMzI1OSIsImlhdCI6MTY3MTQyODQ0NiwiZXhwIjoxNjcxNDI4NTQ2fQ.UZBq-fqEkQLXvCi6Urn_I_g4YZP6Y-5vHhGDnQYDi_U",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"vaz\",\r\n    \"email\":\"ae@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/updateDetails",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"updateDetails"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Successful Response",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "",
+										"value": "",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\":\"vaz\",\r\n    \"email\":\"ae@gmail.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/updateDetails",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"updateDetails"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "229"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"e5-gxEJm3yiBoBE71Ylpv05Rijme+4\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 19 Dec 2022 05:41:31 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"data\": {\n        \"_id\": \"639fe50f5425988f45bf3259\",\n        \"name\": \"vaz\",\n        \"email\": \"ae@gmail.com\",\n        \"createdAt\": \"2022-12-19T04:14:07.352Z\",\n        \"__v\": 0,\n        \"resetPassowrdToken\": \"6de12819471be44fff9b1cf539179662002e29600720ce6de12082fe0f85b546\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Password",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzOWZlNTBmNTQyNTk4OGY0NWJmMzI1OSIsImlhdCI6MTY3MTQyOTE0MiwiZXhwIjoxNjcxNDI5MjQyfQ.84cTT_A9Aamhu2afhrrXJDBjqTC-54RYzSau0vdFW5U",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"currentPassword\" :\"ABCDEFGH\",\r\n    \"newPassword\": \"AB123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{URL}}/updatePassword",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"updatePassword"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Successful Response",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"currentPassword\" :\"ABCDEFGH\",\r\n    \"newPassword\": \"AB123456\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/updatePassword",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"updatePassword"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzOWZlNTBmNTQyNTk4OGY0NWJmMzI1OSIsImlhdCI6MTY3MTQyOTE2MywiZXhwIjoxNjcxNDI5MjYzfQ.ebmTMwvp4hlB9kOyxi0eTSQQhVIsVmjbikmpO8di8EY; Path=/; Expires=Sat, 03 Oct 2296 05:52:43 GMT; HttpOnly"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "202"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"ca-3hpmUViYv75fDDCu6fH47VYmN68\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 19 Dec 2022 05:52:43 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzOWZlNTBmNTQyNTk4OGY0NWJmMzI1OSIsImlhdCI6MTY3MTQyOTE2MywiZXhwIjoxNjcxNDI5MjYzfQ.ebmTMwvp4hlB9kOyxi0eTSQQhVIsVmjbikmpO8di8EY\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Upload CSV",
+			"item": [
+				{
+					"name": "Upload",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/C:/Users/Ankur/Desktop/test/test.csv"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{URL}}/upload",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"upload"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Successful Response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "file",
+											"type": "file",
+											"src": "/C:/Users/Ankur/Desktop/test/test.csv"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:5000/upload",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"upload"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "198"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"c6-uDEjmuM8IrJD0x77vCzBrQ3faAA\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 19 Dec 2022 12:23:43 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"body\": [\n        {\n            \"name\": \"ankur\",\n            \"email\": \"sid66@gmail.com\",\n            \"phone\": \"4134567787\",\n            \"linkedInProfile\": \"https://www.linkedin.com/in/ankur-vazirani/\",\n            \"_id\": \"63a057cfa6b50c00aee0fe20\",\n            \"__v\": 0\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "healthcheck",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
